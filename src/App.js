@@ -5,6 +5,7 @@ export default class NumberCounter extends React.Component {
   constructor(props){
     super(props);
     this.handleClickPlus = this.handleClickPlus.bind(this);
+    this.handleClickMinus = this.handleClickMinus.bind(this);
     this.state = {
       count: 0
     }
@@ -13,6 +14,11 @@ export default class NumberCounter extends React.Component {
   handleClickPlus() {
     this.setState({
       count : this.state.count + 1
+    });
+  }
+  handleClickMinus() {
+    this.setState({
+      count : this.state.count - 1
     });
   }
 
@@ -26,7 +32,7 @@ export default class NumberCounter extends React.Component {
 
         <br />
 
-        <button>-</button>
+        <button onClick={this.handleClickMinus}>-</button>
         <button onClick={this.handleClickPlus}>+</button>
         
 
