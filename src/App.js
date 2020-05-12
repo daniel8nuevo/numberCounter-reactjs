@@ -32,8 +32,8 @@ export default class NumberCounter extends React.Component {
 
         <br />
 
-        <button onClick={this.handleClickMinus}>-</button>
-        <button onClick={this.handleClickPlus}>+</button>
+        <button className='buttons button1' onClick={this.handleClickMinus}>-</button>
+        <button className='buttons button2' onClick={this.handleClickPlus}>+</button>
         
 
       </div>
