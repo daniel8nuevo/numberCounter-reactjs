@@ -24,17 +24,18 @@ export default class NumberCounter extends React.Component {
 
   render(){
     return(
-      <div className='counter'>
+      <div>
 
-        <span>
+        <span className='counter'>
           {this.state.count}
         </span>
 
         <br />
 
+      <span className='rowButtons'>
         <button className='buttons button1' onClick={this.handleClickMinus}>-</button>
         <button className='buttons button2' onClick={this.handleClickPlus}>+</button>
-        
+      </span>
 
       </div>
     );
